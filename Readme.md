@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sofia Abaeva](https://up.htmlacademy.ru/adaptive/20/user/1226095).
-* Наставник: `Неизвестно`.
+* Наставник: [Artur 🦎 Trifonov] (https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
