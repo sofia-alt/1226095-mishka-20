@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" name="nav-toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="/source/catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="/source/form.html">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link">
+            <img class="site-list__icon" src="https://via.placeholder.com/150x150">
+            Поиск
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link">
+            <img class="site-list__icon" src="https://via.placeholder.com/150x150">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="skills">
+      <h1 class="skills__title">Милые штуки ручной работы для дома</h1>
+      <ul class="skills__list ">
+        <li class="skills__item">
+          <a class="skills__link">
+            <p>Предметы интерьера</p>
+            <img class="skills__icon" src="https://via.placeholder.com/150x150">
+          </a>
+        </li>
+        <li class="skills__item">
+          <a class="skills__link">
+            <p>Детские игрушки</p>
+            <img class="skills__icon" src="https://via.placeholder.com/150x150">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="product-week">
+      <h2 class="product-week__title">Вязаные корзинки</h2>
+      <h3>Товары недели</h3>
+      <p class="product-week__info">Экологически чистая пряжа,
+        ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <table class="product-week__table-parameters">
+        <tbody>
+          <tr class="product-week__row">
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr class="product-week__row">
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr class="product-week__row">
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </tbody>
+      </table>
+      <img class="product-week__photo" src="https://via.placeholder.com/150x150">
+      <p class="product-week__price">Цена: 990 руб.</p>
+      <button class="button" type="button" name="order">Заказать</button>
+    </section>
+    <section class="about-company">
+      <h2 class="about company__title">Коротко о нас:</h2>
+      <ul class="about company__list">
+        <li class="about company__item">
+          <img class="about company__icon" src="https://via.placeholder.com/150x150">
+          <p class="about company__info">Экологически чистые материалы</p>
+        </li>
+        <li class="about company__item">
+          <img class="about company__icon" src="https://via.placeholder.com/150x150">
+          <p class="about company__info">Скандинавский стиль по российской цене</p>
+        </li>
+        <li class="about company__item">
+          <img class="about company__icon" src="https://via.placeholder.com/150x150">
+          <p class="about company__info">Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="about company__item">
+          <img class="about company__icon" src="https://via.placeholder.com/150x150">
+          <p class="about company__info">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="about company__item">
+          <img class="about company__icon" src="https://via.placeholder.com/150x150">
+          <p class="about company__info">Поддержка отечественного производителя</p>
+        </li>
+        <li class="about company__item">
+          <img class="about company__icon" src="https://via.placeholder.com/150x150">
+          <p class="about company__info">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+        как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+        и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+        больше лайков!</p>
+      <p class="reviews__author">Анастасия Красильникова</p>
+      <p class="reviews__author_contact">@misssssiskras</p>
+      <div class="reviews__button-toggle">
+        <button class="reviews__button-back" name="back" type="button">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="reviews__button-forward" name="forward" type="button">
+          <span class="visually-hidden">Вперед</span>
+        </button>
+      </div>
+      <button class="button" type="button" name="write-author">Написать</button>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <span class="contacts__name">e-mail:</span>
+          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__name">адрес:</span>
+          <p class="contacts__text">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </li>
+      </ul>
+      <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/-/CCQlNVULDD" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+      <button class="button" type="button" name="write-company">Напишите нам</button>
+    </section>
+  </main>
+  <footer>
+    <section class="social">
+      <ul class="social__social-list">
+        <li class="social__item">
+          <img class="social__icon" src="https://via.placeholder.com/150x150">
+          <span class="visually-hidden">Инстаграм</span>
+        </li>
+        <li class="social__item">
+          <img class="social__icon" src="https://via.placeholder.com/150x150">
+          <span class="visually-hidden">Фейсбук</span>
+        </li>
+        <li class="social__item">
+          <img class="social__icon" src="https://via.placeholder.com/150x150">
+          <span class="visually-hidden">Твиттер</span>
+        </li>
+      </ul>
+    </section>
+    <section class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <img class="copyright__icon" src="https://via.placeholder.com/150x150">
+    </section>
+  </footer>
+</body>
 </html>
