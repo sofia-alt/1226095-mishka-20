@@ -1,0 +1,28 @@
+.promo__title {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $basic-light-black;
+}
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo__link {
+  color: $basic-white;
+  font-size: 19px;
+  line-height: 24px;
+  display: inline-block;
+  background-color: $basic-blue;
+}
+
+.promo__link_interior {
+
+}
+
+.promo__link_toy {
+  background-color: $basic-blue-dark;
+}
