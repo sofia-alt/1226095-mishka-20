@@ -1,3 +1,9 @@
+.product-week {
+  background-color: $basic-white;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
 .product-week__name {
   font-weight: bold;
   font-size: 25px;
@@ -10,6 +16,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-blue;
+  margin: 0;
 }
 
 .product-week__info {
