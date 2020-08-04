@@ -4,4 +4,29 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+
+.button_product-week {
+  padding: 18px 78px;
+}
+
+.button_reviews {
+  padding: 18px 70px;
+}
+
+.button_contacts {
+  margin: 0 30px 40px 30px;
+}
+
+.button_video-block {
+  margin: 0 34px;
+  padding: 18px 20px;
+}
+
+.button_form {
+  background-color: $basic-white;
+  padding: 18px 40px;
 }
