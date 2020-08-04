@@ -1,0 +1,27 @@
+.about-company {
+  background-color: $basic-white;
+  padding-top: 30px;
+  padding-bottom: 55px;
+}
+
+.about-company__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $basic-black;
+  margin-bottom: 30px;
+}
+
+.about-company__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-company__item {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
