@@ -1,0 +1,29 @@
+.process-video {
+  background-color: $basic-white;
+  padding: 30px;
+}
+
+.process-video__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  margin-right: 40px;
+}
+
+.process-video__img {
+  margin-bottom: 35px;
+}
+
+.process-video__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-dark;
+  padding-right: 27px;
+  padding-left: 34px;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.process-video__inner {
+  border: 1px solid $basic-grey;
+  padding: 22px 34px 33px 34px;
+}
