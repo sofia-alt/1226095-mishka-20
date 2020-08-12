@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media  (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
   }
 }
@@ -26,7 +26,12 @@
   font-size: 13px;
   line-height: 30px;
   color: $basic-dark;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .product__price {
@@ -70,7 +75,7 @@
 
 .product__link {
   display: block;
-  margin-bottom: -6px;
+  margin-bottom: -5px;
 }
 
 .product__info_inner {

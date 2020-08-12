@@ -77,6 +77,7 @@
   line-height: 20px;
   color: $basic-dark;
   margin-bottom: 28px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -124,6 +125,8 @@
 }
 
 .product-week__photo img {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     width: 333px;
     height: 404px;

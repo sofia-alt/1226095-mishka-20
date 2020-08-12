@@ -7,7 +7,6 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    border-bottom: 1px solid $basic-grey;
   }
 }
 
@@ -29,7 +28,7 @@
 
 .site-list__item:nth-child(2) {
   @media (min-width: $desktop-width) {
-    width: 55%;
+    margin-right: 300px;
     padding-left: 35px;
   }
 }

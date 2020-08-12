@@ -6,8 +6,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 25px 53px 0 50px;
     background-color: $basic-grey-light;
+    border-top: 1px solid $basic-grey;
     width: 100%;
   }
 }
@@ -34,4 +34,16 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+}
+
+.info-menu__inner {
+  width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 45px 0 48px;
+}
+
+.info-menu_dark {
+  background-color: $basic-dark-grey;
 }
