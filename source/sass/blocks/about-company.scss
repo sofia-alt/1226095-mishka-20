@@ -1,6 +1,14 @@
 .about-company {
   background-color: $basic-white;
   padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px 85px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 270px 90px 225px;
+  }
 }
 
 .about-company__title {
@@ -9,12 +17,24 @@
   line-height: 30px;
   color: $basic-black;
   margin-bottom: 30px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .about-company__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-company__item {
@@ -23,4 +43,43 @@
   line-height: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.about-company__item_ecology {
+  @media (min-width: $tablet-width) {
+    order: -3;
+  }
+}
+
+.about-company__scandinav-style {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.about-company__item_like-photo {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.about-company__item_love-affection {
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
+
+.about-company__item_gift-wrap {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }

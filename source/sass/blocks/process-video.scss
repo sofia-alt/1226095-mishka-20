@@ -1,12 +1,13 @@
 .process-video {
   background-color: $basic-white;
-  padding: 30px;
+  margin: 30px;
+  border: 1px solid $basic-grey;
 }
 
 .process-video__title {
-  margin-top: 0;
-  margin-bottom: 27px;
-  margin-right: 40px;
+  margin: 30px 30px 27px 90px;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .process-video__img {
@@ -23,7 +24,6 @@
   margin-bottom: 45px;
 }
 
-.process-video__inner {
-  border: 1px solid $basic-grey;
-  padding: 22px 34px 33px 34px;
+.process-video__button {
+  margin: 0 34px 33px 34px;
 }

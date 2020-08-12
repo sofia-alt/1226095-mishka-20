@@ -1,6 +1,17 @@
 .product-week {
   background-color: $basic-white;
   padding: 30px 30px 35px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 50px 52px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 50px 75px 85px;
+  }
 }
 
 .product-week__name {
@@ -8,6 +19,19 @@
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 45px;
+  }
 }
 
 .product-week__title {
@@ -16,6 +40,23 @@
   text-transform: uppercase;
   color: $basic-blue;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 17px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: left;
+  }
 }
 
 .product-week__info {
@@ -23,6 +64,11 @@
   line-height: 24px;
   color: $basic-dark;
   margin-bottom: 28px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .product-week__table-parameters {
@@ -30,10 +76,15 @@
   line-height: 20px;
   color: $basic-dark;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .product-week__row {
   text-align: left;
+  box-shadow: inset 0 -1px 0 0 $basic-grey;
 
   td {
     padding-top: 10px;
@@ -46,5 +97,27 @@
   line-height: 24px;
   font-weight: bold;
   color: $basic-dark;
-  margin: 25px auto;
+  margin: 0 auto 25px;
+}
+
+.product-week__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 292px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
+    width: 292px;
+  }
+}
+
+.product-week__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

@@ -1,6 +1,21 @@
 .reviews {
   background-color: $basic-white;
   padding: 30px 30px 45px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 83px 50px 50px 50px;
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 50px 165px 225px;
+    background-position-x: 50px;
+  }
 }
 
 .reviews__title {
@@ -9,6 +24,18 @@
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
@@ -23,14 +50,25 @@
   color: $basic-dark;
   font-size: 15px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author_contact {
@@ -43,4 +81,11 @@
 
 .reviews__button-toggle {
   margin-bottom: 40px;
+}
+
+.reviews__button {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    padding: 16px 30px;
+  }
 }
