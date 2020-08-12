@@ -1,0 +1,14 @@
+.page-header {
+
+}
+
+.page-header__logo {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 149px;
+    height: 72px;
+    left: 50%;
+    margin-left: -75px;
+    top: 10px;
+  }
+}

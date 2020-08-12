@@ -1,0 +1,37 @@
+.info-menu {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px 53px 0 50px;
+    background-color: $basic-grey-light;
+    width: 100%;
+  }
+}
+
+.info-menu__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 55px;
+  }
+}
+
+.info-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-menu__text {
+  margin: 0;
+}
+
+.info-menu__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}

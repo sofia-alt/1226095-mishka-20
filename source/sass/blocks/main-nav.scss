@@ -1,4 +1,5 @@
-.site-list__link {
-  padding: 28px 0 28px 76px;
-  display: block;
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

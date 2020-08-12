@@ -18,7 +18,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item_catalog">
           <a class="site-list__link" href="catalog.html">
             Каталог товаров
           </a>
@@ -28,20 +28,31 @@
             Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item_search">
           <a class="site-list__link" href="#">
             <img class="site-list__icon" src="https://via.placeholder.com/150x150" alt="Поиск" width="18" height="18">
-            Поиск
+            <span class="search">Поиск</span>
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item_basket">
           <a class="site-list__link" href="#">
             <img class="site-list__icon" src="https://via.placeholder.com/150x150" alt="Корзина" width="21" height="18">
-            Корзина: пока пуста
+            <span class="basket">Корзина: пока пуста</span>
           </a>
         </li>
       </ul>
     </nav>
+    <div class="info-menu">
+      <ul class="info-menu__list">
+        <li class="info-menu__item">
+          <a class="info-menu__link">Новые поступления</a>
+        </li>
+        <li class="info-menu__item">
+          <a class="info-menu__link">Распродажа</a>
+        </li>
+      </ul>
+      <p class="info-menu__text">Бесплатная доставка по России</p>
+    </div>
   </header>
   <main class="page-main">
     <section class="promo">
@@ -87,7 +98,7 @@
           <p class="product-week__price">Цена: 990 руб.</p>
           <a class="button" href="form.html">Заказать</a>
         </div>
-        <a cla ss="product-week__photo" href="#"><img src="img/triple-set-mobile@1x.jpg"
+        <a class="product-week__photo" href="#"><img src="img/triple-set-mobile@1x.jpg"
             alt="Фотография вязаных корзинок" width="260" height="315"></a>
       </section>
       <section class="about-company">
