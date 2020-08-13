@@ -4,13 +4,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 50px 52px 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 50px 75px 85px;
+    grid-template-columns: 470px auto;
+    padding: 69px 0 75px 50px;
+    gap: 0 58px;
   }
 }
 
@@ -31,7 +33,7 @@
     order: 0;
     font-size: 53px;
     line-height: 57px;
-    margin-left: 45px;
+    margin-left: 50px;
   }
 }
 
@@ -41,8 +43,11 @@
   text-transform: uppercase;
   color: $basic-blue;
   margin: 0;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  grid-column: 1/-1;
+  grid-row: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -52,11 +57,13 @@
     width: 100%;
     text-align: center;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: left;
+    z-index: 1;
+    margin-left: 55px;
   }
 }
 
@@ -68,7 +75,15 @@
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 295px;
   }
 }
 
@@ -80,7 +95,13 @@
   width: 260px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 43px;
+    width: 291px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-bottom: 110px;
   }
 }
 
@@ -100,19 +121,12 @@
   font-weight: bold;
   color: $basic-dark;
   margin: 0 auto 25px;
-}
-
-.product-week__inner {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 292px;
-  }
+  text-align: center;
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
-    width: 292px;
+    margin-right: 80px;
+    margin-left: auto;
+    margin-bottom: 35px;
   }
 }
 
@@ -125,10 +139,35 @@
 }
 
 .product-week__photo img {
+  display: block;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 333px;
     height: 404px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.product-week__photo {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 2/6;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/6;
+  }
+}
+
+.product-week__button {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    width: 292px;
   }
 }

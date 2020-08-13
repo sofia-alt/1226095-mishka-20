@@ -51,14 +51,14 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    max-width: 668px;
+    display: flex;
+    margin: 0 50px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
@@ -80,4 +80,10 @@
 
 .promo__link_toy {
   background-color: $basic-blue-dark;
+}
+
+.promo__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
