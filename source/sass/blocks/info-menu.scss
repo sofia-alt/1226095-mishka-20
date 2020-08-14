@@ -1,11 +1,14 @@
 .info-menu {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
     background-color: $basic-grey-light;
     border-top: 1px solid $basic-grey;
     width: 100%;
@@ -24,6 +27,10 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .info-menu__text {

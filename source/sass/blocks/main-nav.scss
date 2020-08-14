@@ -1,5 +1,48 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 370px 82px 315px;
+    grid-template-areas:
+      "logo search cart"
+      "menu menu delivery";
+  }
+}
+
 .main-nav__toggle {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: $tablet-width) {
+    grid-area: logo;
+  }
+}
+
+.main-nav__search {
+  @media (min-width: $tablet-width) {
+    grid-area: search;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 33px 35px 32px;
+    border-right: 1px solid $basic-grey;
+    border-left: 1px solid $basic-grey;
+  }
+}
+
+.main-nav__cart {
+  @media (min-width: $tablet-width) {
+    grid-area: cart;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: menu;
   }
 }
