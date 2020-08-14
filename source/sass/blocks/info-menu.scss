@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     background-color: $basic-grey-light;
     border-top: 1px solid $basic-grey;
+    justify-content: space-between;
     width: 100%;
   }
 }
@@ -25,11 +26,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px 0;
   }
 }
 

@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .site-list__link {

@@ -2,10 +2,17 @@
   @media (min-width: $tablet-width) {
     display: grid;
     justify-content: center;
-    grid-template-columns: 370px 82px 315px;
+    grid-template-columns: 470px auto 82px 315px;
     grid-template-areas:
       "logo search cart"
       "menu menu delivery";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 470px auto 83px 315px;
+    grid-template-areas:
+      "menu logo search cart"
+      "info-menu info-menu info-menu info-menu";
   }
 }
 
@@ -37,6 +44,10 @@
   @media (min-width: $tablet-width) {
     grid-area: cart;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 72px 0 20px;
+  }
 }
 
 .main-nav__list {
@@ -45,4 +56,8 @@
     flex-wrap: wrap;
     grid-area: menu;
   }
+}
+
+.main-nav__menu {
+  grid-area: info-menu;
 }
