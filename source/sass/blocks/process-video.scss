@@ -1,16 +1,16 @@
 .process-video {
   background-color: $basic-white;
-  margin: 0 30px 60px 30px;
   border: 1px solid $basic-grey;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 50px 65px 50px;
+    margin-bottom: 65px;
     display: grid;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 50px 63px 53px;
     grid-template-columns: 682px 230px;
+    margin-bottom: 105px;
     gap: 0 50px;
   }
 }

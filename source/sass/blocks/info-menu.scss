@@ -9,7 +9,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey-light;
     border-top: 1px solid $basic-grey;
     justify-content: space-between;
     width: 100%;
@@ -46,16 +45,4 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-}
-
-.info-menu__inner {
-  width: 1150px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 45px 0 48px;
-}
-
-.info-menu_dark {
-  background-color: $basic-dark-grey;
 }

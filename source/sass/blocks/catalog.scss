@@ -1,12 +1,3 @@
-.catalog {
-  background-color: $basic-white;
-  padding: 30px;
-
-  @media (min-width: $tablet-width) {
-    padding: 50px;
-  }
-}
-
 .catalog__list {
   list-style: none;
   margin: 0;

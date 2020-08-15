@@ -25,6 +25,12 @@
 .main-nav__logo {
   @media (min-width: $tablet-width) {
     grid-area: logo;
+    margin: 22px 0 20px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 
@@ -64,8 +70,4 @@
 
 .main-nav__menu {
   grid-area: info-menu;
-}
-
-.main-nav__delivery {
-  grid-area: delivery;
 }

@@ -3,14 +3,10 @@
   padding-top: 25px;
   padding-bottom: 22px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
   }
 }
