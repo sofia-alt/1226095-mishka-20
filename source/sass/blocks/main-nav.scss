@@ -2,10 +2,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     justify-content: center;
-    grid-template-columns: 470px auto 82px 315px;
+    grid-template-columns: 370px 82px 315px;
     grid-template-areas:
       "logo search cart"
-      "menu menu delivery";
+      "menu menu info-menu";
   }
 
   @media (min-width: $desktop-width) {
@@ -60,4 +60,8 @@
 
 .main-nav__menu {
   grid-area: info-menu;
+}
+
+.main-nav__delivery {
+  grid-area: delivery;
 }

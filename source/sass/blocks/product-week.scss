@@ -6,6 +6,7 @@
     padding: 40px 50px 52px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
     gap: 0 42px;
   }
 
@@ -101,7 +102,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
-    margin-bottom: 110px;
   }
 }
 
