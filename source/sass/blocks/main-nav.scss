@@ -29,6 +29,8 @@
 }
 
 .main-nav__search {
+  display: block;
+
   @media (min-width: $tablet-width) {
     grid-area: search;
   }
@@ -41,6 +43,8 @@
 }
 
 .main-nav__cart {
+  display: block;
+
   @media (min-width: $tablet-width) {
     grid-area: cart;
   }
