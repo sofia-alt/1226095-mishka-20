@@ -14,15 +14,15 @@
 }
 
 .promo__inner {
-  padding: 75px 10px 175px 10px;
+  padding: 75px 10px 120px 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 110px 135px 375px;
+    padding: 155px 80px 375px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 120px 340px 360px;
+    padding: 160px 300px 355px;
   }
 }
 
@@ -31,17 +31,20 @@
   font-size: 27px;
   line-height: 30px;
   color: $basic-light-black;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    width: 505px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    width: 620px;
   }
 }
 
@@ -64,16 +67,11 @@
 
 .promo__link {
   color: $basic-white;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
   display: block;
   background-color: $basic-blue;
   padding: 32px 180px 32px 30px;
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
     padding: 34px 360px 34px 37px;
   }
 }
@@ -85,5 +83,18 @@
 .promo__item {
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  width: 130px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
