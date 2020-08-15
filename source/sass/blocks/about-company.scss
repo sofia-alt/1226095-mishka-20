@@ -30,10 +30,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 635px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
   }
 }
 
@@ -45,7 +52,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,32 +61,10 @@
   }
 }
 
-.about-company__item_ecology {
-  @media (min-width: $tablet-width) {
-    order: -3;
-  }
-}
+.about-company__item:nth-child(2n) {
+  order: 1;
 
-.about-company__scandinav-style {
   @media (min-width: $tablet-width) {
-    order: -1;
-  }
-}
-
-.about-company__item_like-photo {
-  @media (min-width: $tablet-width) {
-    order: 1;
-  }
-}
-
-.about-company__item_love-affection {
-  @media (min-width: $tablet-width) {
-    order: -2;
-  }
-}
-
-.about-company__item_gift-wrap {
-  @media (min-width: $tablet-width) {
-    order: 1;
+    order: 0;
   }
 }
