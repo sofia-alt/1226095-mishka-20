@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 50px 165px 225px;
+    padding: 80px 50px 85px 225px;
     background-position-x: 50px;
   }
 }
@@ -87,5 +87,19 @@
   @media (min-width: $tablet-width) {
     order: -1;
     padding: 16px 30px;
+  }
+}
+
+.reviews__container {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
