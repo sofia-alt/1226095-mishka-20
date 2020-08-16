@@ -6,4 +6,15 @@
   resize: none;
   font-family: inherit;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-left: 0;
+  }
 }
