@@ -1,6 +1,14 @@
 .about-company {
   background-color: $basic-white;
-  padding: 30px;
+  padding: 30px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 270px 90px 225px;
+  }
 }
 
 .about-company__title {
@@ -9,12 +17,31 @@
   line-height: 30px;
   color: $basic-black;
   margin-bottom: 30px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .about-company__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 635px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+  }
 }
 
 .about-company__item {
@@ -23,4 +50,21 @@
   line-height: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.about-company__item:nth-child(2n) {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }

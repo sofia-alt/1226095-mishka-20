@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .site-list__link {
@@ -9,4 +17,17 @@
   color: $basic-black;
   font-size: 17px;
   line-height: 24px;
+  display: block;
+}
+
+.site-list__item {
+  padding: 28px 0 28px 76px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 35px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 15px 35px 50px;
+  }
 }

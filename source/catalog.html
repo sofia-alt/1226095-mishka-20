@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип" width="86" height="35">
-    </a>
     <nav class="main-nav">
+      <a href="index.html" class="main-nav__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип" width="86" height="35">
+      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -27,24 +28,31 @@
             Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            <img class="site-list__icon" src="https://via.placeholder.com/150x150" alt="Поиск" width="18" height="18">
-            Поиск
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            <img class="site-list__icon" src="https://via.placeholder.com/150x150" alt="Корзина" width="21" height="18">
-            Корзина: пока пуста
-          </a>
-        </li>
       </ul>
+      <a class="main-nav__search search" href="#">
+        <img class="search__icon" src="https://via.placeholder.com/150x150" alt="Поиск" width="18" height="18">
+        <span class="search__text">Поиск</span>
+      </a>
+      <a class="main-nav__cart cart" href="#">
+        <img class="cart__icon" src="https://via.placeholder.com/150x150" alt="Корзина" width="21" height="18">
+        <span class="cart__text">Корзина: пока пуста</span>
+      </a>
+      <div class="info-menu main-nav__menu">
+        <ul class="info-menu__list">
+          <li class="info-menu__item">
+            <a class="info-menu__link">Новые поступления</a>
+          </li>
+          <li class="info-menu__item">
+            <a class="info-menu__link">Распродажа</a>
+          </li>
+        </ul>
+        <p class="info-menu__text">Бесплатная доставка по России</p>
+      </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Каталог товаров</h1>
-    <section class="catalog">
+    <section class="container catalog">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item product">
@@ -57,59 +65,62 @@
               <h3 class="product__title">Зайчик-попрыгайчик</h3>
             </a>
             <p class="product__parameters">Рост 30 см, вес 200 г</p>
-            <p class="product__price">1200 руб.</p>
-            <button class="product__button-basket" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="product__inner">
+              <p class="product__price">1200 руб.</p>
+              <button class="product__button-cart" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </div>
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Фотография корзинки для белья"
-              width="260" height="195">
+            <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Фотография корзинки для белья" width="260"
+              height="195">
           </a>
           <div class="product__info">
             <a class="product__link" href="#">
               <h3 class="product__title">Корзинка для белья</h3>
             </a>
             <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб.</p>
-            <button class="product__button-basket" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="product__inner">
+              <p class="product__price">690 руб.</p>
+              <button class="product__button-cart" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </div>
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__img" src="img/photo-toys-mobile@1x.jpg"
-              alt="Фотография большой корзинки для игрушек" width="260" height="195">
+            <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Фотография большой корзинки для игрушек"
+              width="260" height="195">
           </a>
           <div class="product__info">
             <a class="product__link" href="#">
               <h3 class="product__title">Большая корзинка для игрушек</h3>
             </a>
             <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
-            <p class="product__price">1500 руб.</p>
-            <button class="product__button-basket" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </button>
+            <div class="product__inner">
+              <p class="product__price">1500 руб.</p>
+              <button class="product__button-cart" type="button">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </button>
+            </div>
           </div>
         </li>
       </ul>
     </section>
-    <section class="process-video">
-      <div class="process-video__inner">
-        <h2 class="process-video__title">Процесс производства</h2>
-        <div class="process-video__wrapper">
-          <a class="process-video__link">
-            <img class="process-video__img" src="img/video-mobile@1x.jpg"
-              alt="Превью видео с процессом производства продукции" width="260" height="150">
-          </a>
-        </div>
-        <p class="process-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-          появляются наши товары.</p>
-        <a class="button" href="form.html">Сделать заказ</a>
+    <section class="container process-video">
+      <h2 class="process-video__title">Процесс производства</h2>
+      <div class="process-video__wrapper">
+        <a class="process-video__link">
+          <img class="process-video__img" src="img/video-mobile@1x.jpg"
+            alt="Превью видео с процессом производства продукции" width="260" height="150">
+        </a>
       </div>
+      <p class="process-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="button process-video__button" href="form.html">Сделать заказ</a>
     </section>
   </main>
   <footer class="page-footer">

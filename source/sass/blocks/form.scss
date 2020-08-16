@@ -12,6 +12,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .form__list {
@@ -42,5 +43,7 @@
   height: 52px;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
+  width: 100%;
+  margin-bottom: 22px;
 }

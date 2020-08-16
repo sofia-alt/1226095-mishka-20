@@ -3,4 +3,10 @@
   padding-top: 25px;
   padding-bottom: 22px;
   text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
