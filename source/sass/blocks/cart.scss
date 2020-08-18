@@ -5,7 +5,16 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    justify-content: flex-end;
+  }
+
+  &:hover svg {
+    fill: $basic-blue;
+    opacity: 1;
+  }
+
+  &:active svg {
+    fill: $basic-blue;
+    opacity: 0.3;
   }
 }
 
@@ -15,6 +24,11 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: 31px;
   }
+}
+
+.cart__icon {
+  fill: $basic-black;
+  opacity: 0.2;
 }

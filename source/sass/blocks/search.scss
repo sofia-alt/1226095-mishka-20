@@ -5,12 +5,28 @@
   font-weight: bold;
   display: flex;
   align-items: center;
+
+  &:hover svg {
+    fill: $basic-blue;
+    opacity: 1;
+  }
+
+  &:active svg {
+    fill: $basic-blue;
+    opacity: 0.3;
+  }
 }
 
 .search__text {
-  margin-left: 27px;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
+
+.search__icon {
+  fill: $basic-black;
+  opacity: 0.2;
+}
+

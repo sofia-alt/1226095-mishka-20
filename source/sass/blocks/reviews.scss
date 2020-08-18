@@ -1,6 +1,6 @@
 .reviews {
   background-color: $basic-white;
-  padding: 30px 0;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     padding: 83px 50px 50px 50px;
@@ -23,7 +23,7 @@
   font-size: 25px;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
@@ -46,7 +46,7 @@
 
 .reviews__text {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   color: $basic-dark;
   font-size: 15px;
   line-height: 30px;
@@ -76,11 +76,7 @@
   line-height: 30px;
   color: $basic-dark;
   margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.reviews__button-toggle {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .reviews__button {
@@ -102,4 +98,42 @@
     width: 1050px;
     margin: 0 auto;
   }
+}
+
+.reviews__button-toggle {
+  border: 1px solid $basic-grey;
+  margin-bottom: 37px;
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__button-toggle button {
+  background-color: transparent;
+  border: none;
+  width: 50%;
+  height: 50px;
+  padding: 0;
+}
+
+.reviews__button-back {
+  background-image: url("/img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+
+  &::after {
+    content: "";
+    border-right: 1px solid $basic-grey;
+    height: 52px;
+    top: -1px;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.reviews__button-forward {
+  background-image: url("/img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
