@@ -55,13 +55,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 0 50px;
     flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    margin: 0 auto;
   }
 }
 
@@ -69,11 +69,6 @@
   color: $basic-white;
   display: block;
   background-color: $basic-blue;
-  padding: 32px 180px 32px 30px;
-
-  @media (min-width: $desktop-width) {
-    padding: 34px 360px 34px 37px;
-  }
 }
 
 .promo__link_toy {
@@ -87,14 +82,21 @@
 }
 
 .promo__text {
-  margin: 0;
-  width: 130px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
+  padding: 32px 180px 32px 30px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 32px 180px 32px 30px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 360px 34px 37px;
   }
 }

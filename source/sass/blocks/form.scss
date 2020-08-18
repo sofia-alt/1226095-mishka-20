@@ -71,9 +71,13 @@
 
 .form__list_checkbox {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 210px 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 740px;
+    grid-template-columns: 210px 210px 210px;
   }
 }
 
