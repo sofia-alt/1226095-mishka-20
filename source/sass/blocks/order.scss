@@ -1,18 +1,35 @@
 .order {
   background-color: $basic-white;
+  padding-top: 20px;
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .order__text {
-  margin-top: 20px;
+  margin: 0;
+  padding-bottom: 40px;
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark;
 
   @media (min-width: $tablet-width) {
-    margin-top: 55px;
     width: 630px;
+    padding-bottom: 80px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 705px;
   }
 }
 
@@ -22,8 +39,30 @@
   color: $basic-dark;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .order__button {
-  width: 100%;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    order: -1;
+  }
+}
+
+.order__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }

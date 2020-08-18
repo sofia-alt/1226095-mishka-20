@@ -2,14 +2,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     justify-content: center;
-    grid-template-columns: 370px 82px 315px;
+    grid-template-columns: 1fr 82px 265px;
     grid-template-areas:
       "logo search cart"
       "menu menu info-menu";
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 470px auto 83px 315px;
+    grid-template-columns: 375px 1fr 83px 265px;
     grid-template-areas:
       "menu logo search cart"
       "info-menu info-menu info-menu info-menu";
@@ -17,46 +17,61 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav__logo {
+  display: block;
+  position: relative;
+  text-align: center;
+  align-self: center;
+  padding: 22px;
+  border-bottom: 1px solid $basic-grey;
+
   @media (min-width: $tablet-width) {
     grid-area: logo;
-    margin: 22px 0 20px 50px;
+    text-align: left;
+    padding: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 149px;
-    height: 72px;
+    text-align: center;
   }
 }
 
 .main-nav__search {
-  display: block;
+  padding: 30px;
+  border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 36px 31px 34px 33px;
+    border-bottom: none;
+    border-right: 1px solid $basic-grey;
+    border-left: 1px solid $basic-grey;
     grid-area: search;
   }
 
   @media (min-width: $desktop-width) {
     padding: 36px 33px 35px 32px;
-    border-right: 1px solid $basic-grey;
-    border-left: 1px solid $basic-grey;
   }
 }
 
 .main-nav__cart {
-  display: block;
+  font-weight: bold;
+  padding: 30px;
+  border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 33px 0 33px 30px;
     grid-area: cart;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 35px 72px 0 20px;
   }
 }
 

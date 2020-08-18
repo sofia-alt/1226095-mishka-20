@@ -3,21 +3,22 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: flex-end;
+    align-self: end;
   }
 
   @media (min-width: $desktop-width) {
     border-top: 1px solid $basic-grey;
     justify-content: space-between;
     width: 100%;
+    align-items: baseline;
   }
 }
 
 .info-menu__item {
   @media (min-width: $desktop-width) {
-    margin-right: 55px;
+    margin-right: 60px;
   }
 }
 
@@ -33,16 +34,19 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 50px 0;
+    padding-top: 20px;
   }
 }
 
 .info-menu__text {
   margin: 0;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .info-menu__link {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+  color: $basic-black;
 }
