@@ -1,16 +1,16 @@
 .process-video {
   background-color: $basic-white;
   border: 1px solid $basic-grey;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 62px;
     display: grid;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 682px 230px;
-    margin-bottom: 105px;
+    grid-template-columns: 682px 260px;
+    margin-bottom: 102px;
     gap: 0 50px;
   }
 }
@@ -22,15 +22,6 @@
   line-height: 24px;
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 20px 30px 105px;
-    font-size: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 95px 110px 28px 0;
-  }
-
   &::after {
     content: "";
     background-image: url("/img/icon-video.svg");
@@ -38,7 +29,28 @@
     width: 33px;
     height: 32px;
     position: absolute;
-    top: 50px;
+    top: 29px;
+    left: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 25px 105px;
+    font-size: 20px;
+
+    &::after {
+      top: -7px;
+      left: 41px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    padding: 96px 0 0 28px;
+
+    &::after {
+      top: 42px;
+      left: 28px;
+    }
   }
 }
 
@@ -49,18 +61,20 @@
   padding-right: 27px;
   padding-left: 34px;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 40px;
-    padding-left: 46px;
-    padding-right: 40px;
+    padding-left: 39px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-left: 29px;
+    padding-right: 0;
+    margin-bottom: 55px;
   }
 }
 
@@ -72,7 +86,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 60px auto;
+    margin: 0 0 58px auto;
+    width: 230px;
   }
 }
 
@@ -82,7 +97,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +111,11 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
     height: 455px;
   }
 }

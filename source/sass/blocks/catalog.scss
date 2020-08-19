@@ -1,8 +1,12 @@
 .catalog {
-  padding: 30px 0;
+  padding: 28px 0 30px;
 
   @media (min-width: $tablet-width) {
     padding: 70px 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 0 56px;
   }
 }
 
@@ -14,7 +18,7 @@
   row-gap: 30px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 50px;
+    row-gap: 53px;
   }
 
   @media (min-width: $desktop-width) {

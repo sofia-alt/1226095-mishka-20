@@ -13,12 +13,16 @@
   line-height: 24px;
   color: $basic-black;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     max-width: 240px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
   }
 }
 
@@ -27,10 +31,15 @@
   line-height: 30px;
   color: $basic-dark;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 38px;
   }
 }
 
@@ -39,23 +48,27 @@
   font-size: 15px;
   line-height: 24px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .product__info {
-  border: 1px solid $basic-grey;
-  padding: 28px;
+  border: 1px solid #ececec;
+  padding: 26px 26px 24px 27px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 32px 30px 35px;
+    padding: 25px 32px 27px 31px;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 32px 32px 28px;
+    padding: 26px 31px 24px 26px;
   }
 
   &:hover {
@@ -96,6 +109,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 .product__icon-cart {
