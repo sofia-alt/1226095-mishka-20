@@ -7,13 +7,21 @@
     text-align: center;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &:hover svg {
-    fill: $basic-blue;
+    fill: $blue-icon;
     opacity: 1;
   }
 
   &:active svg {
-    fill: $basic-blue;
+    fill: $blue-icon;
     opacity: 0.3;
   }
 }
@@ -24,7 +32,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 31px;
+    margin-left: 33px;
   }
 }
 

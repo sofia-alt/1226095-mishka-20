@@ -1,20 +1,45 @@
 .reviews {
   background-color: $basic-white;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 83px 50px 50px 50px;
+    padding: 80px 51px 106px 50px;
     background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 50px 85px 225px;
+    padding: 80px 50px 156px 225px;
     background-position-x: 50px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("/img/bg-zigzag-line.svg");
+    height: 6px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      width: 1052px;
+    }
   }
 }
 
@@ -26,7 +51,7 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     font-size: 43px;
     line-height: 50px;
     order: -2;
@@ -35,6 +60,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 33px;
   }
 }
 
@@ -53,6 +79,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
   }
 }
 
@@ -82,7 +113,7 @@
 .reviews__button {
   @media (min-width: $tablet-width) {
     order: -1;
-    padding: 16px 30px;
+    padding: 15px 38px;
   }
 }
 
@@ -95,7 +126,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: 1150px;
     margin: 0 auto;
   }
 }
@@ -106,6 +137,18 @@
   width: 260px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 101px;
+    right: 49px;
+    width: 175px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 152px;
+  }
 }
 
 .reviews__button-toggle button {
@@ -114,6 +157,15 @@
   width: 50%;
   height: 50px;
   padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__button-back {
@@ -129,6 +181,10 @@
     top: -1px;
     right: 0;
     position: absolute;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 

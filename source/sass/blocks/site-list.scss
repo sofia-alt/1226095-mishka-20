@@ -10,6 +10,7 @@
   font-size: 17px;
   line-height: 24px;
   display: block;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -20,6 +21,14 @@
     font-size: 17px;
     line-height: 24px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item {
@@ -27,7 +36,7 @@
   border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 35px 0 0;
+    padding: 21px 35px 0 0;
     height: 100%;
     border-bottom: none;
   }

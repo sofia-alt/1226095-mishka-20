@@ -7,12 +7,12 @@
   align-items: center;
 
   &:hover svg {
-    fill: $basic-blue;
+    fill: $blue-icon;
     opacity: 1;
   }
 
   &:active svg {
-    fill: $basic-blue;
+    fill: $blue-icon;
     opacity: 0.3;
   }
 }

@@ -1,9 +1,10 @@
 .product-week {
   background-color: $basic-white;
-  padding: 32px 0;
+  padding: 32px 0 41px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 50px;
+    padding: 40px 0 74px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content 1fr min-content;
@@ -12,8 +13,31 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 467px auto;
-    padding: 69px 0 50px;
+    padding: 45px 0 98px;
     gap: 0 57px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("/img/bg-zigzag-line.svg");
+    height: 6px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      width: 1052px;
+    }
   }
 }
 
@@ -52,7 +76,6 @@
   grid-row: 1;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
     line-height: 17px;
     flex-direction: row;
     justify-content: space-between;
@@ -60,13 +83,14 @@
     text-align: center;
     align-items: center;
     margin-bottom: 40px;
+    padding-right: 26px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: left;
     z-index: 1;
     margin-left: 47px;
-    padding-top: 57px;
+    padding-top: 65px;
     margin-bottom: 36px;
   }
 }
@@ -95,7 +119,7 @@
   font-size: 15px;
   line-height: 20px;
   color: $basic-dark;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   width: 260px;
 
   @media (min-width: $tablet-width) {
@@ -116,7 +140,12 @@
   td {
     padding-top: 4px;
     padding-bottom: 15px;
-    min-width: 80px;
+    min-width: 95px;
+    display: inline-block;
+
+    @media (min-width: $desktop-width) {
+      min-width: 98px;
+    }
   }
 }
 
@@ -128,10 +157,15 @@
   margin: 0 auto 22px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0 auto 29px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    margin-right: 73px;
     margin-left: auto;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 }
 
@@ -151,6 +185,7 @@
     width: 333px;
     height: 404px;
     margin-bottom: 0;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {

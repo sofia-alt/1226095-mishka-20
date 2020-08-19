@@ -57,6 +57,14 @@
   @media (min-width: $desktop-width) {
     padding: 27px 32px 32px 28px;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__img {
@@ -82,4 +90,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: auto;
+}
+
+.product__button-cart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.product__icon-cart {
+  fill: #000000;
+  opacity: 0.2;
+
+  &:hover {
+    fill: $blue-icon;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $blue-icon;
+    opacity: 0.3;
+  }
 }

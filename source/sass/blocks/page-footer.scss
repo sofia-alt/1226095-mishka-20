@@ -4,9 +4,40 @@
   padding-bottom: 22px;
   text-align: center;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    padding: 52px 0;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 102px 1fr 228px;
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $basic-black;
+  }
+
+  &:hover {
+    fill: $blue-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

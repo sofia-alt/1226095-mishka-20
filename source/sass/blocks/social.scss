@@ -1,5 +1,13 @@
 .social {
   margin: 0 auto 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 4px auto 0 121px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 4px auto 0 312px;
+  }
 }
 
 .social__list {
@@ -17,4 +25,18 @@
 
 .social__item:nth-child(3n) {
   margin-right: 0;
+}
+
+.social__icon {
+  fill: $basic-black;
+}
+
+.social__link svg {
+  &:hover {
+    fill: $blue-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
