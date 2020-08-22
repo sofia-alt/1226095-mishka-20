@@ -38,7 +38,8 @@
     padding: 57px 0 102px;
 
     &::after {
-      background-size: 77%;
+      background-size: auto 35px;
+      background-position-x: 50%;
     }
   }
 }

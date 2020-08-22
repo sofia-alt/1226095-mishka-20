@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("/img/hero-desktop@1x.jpg");
     background-position-x: 50%;
-    background-position-y: 155%;
+    background-position-y: 115%;
   }
 
   &::after {
@@ -30,8 +30,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 34px;
-      background-size: 83%;
+      background-size: auto 37px;
+      background-position-x: 50%;
     }
   }
 }
@@ -92,48 +92,71 @@
   color: $basic-white;
   display: block;
   background-color: $basic-blue;
-  position: relative;
+
+  &:hover {
+    .promo__text {
+      left: 0;
+      bottom: 5px;
+      background-color: $blue-light-state;
+    }
+
+    .promo__text_toy {
+      background: $blue-state;
+    }
+
+    .promo__text::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    .promo__text::after {
+      opacity: 0.3;
+    }
+  }
 }
 
-.promo__link_interior {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 41px;
-    height: 61px;
-    background-image: url("/img/icon-interior.svg");
-    background-repeat: no-repeat;
-    top: 23px;
-    right: 36px;
-    opacity: 0.7;
+.promo__text::after {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 61px;
+  top: 22px;
+  right: 16px;
 
-    @media (min-width: $tablet-width) {
-      top: 32px;
-    }
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
+}
+
+.promo__text_interior {
+  position: relative;
+
+  &::after {
+    background-image: url("/img/icon-interior.svg");
   }
 }
 
 .promo__link_toy {
   background-color: $basic-blue-dark;
 
+  &:hover {
+    background-color: $blue-state;
+  }
+}
+
+
+.promo__text_toy {
+  position: relative;
+
   &::after {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
     background-image: url("/img/icon-toy.svg");
-    background-repeat: no-repeat;
-    top: 21px;
-    right: 27px;
-    opacity: 0.7;
+    right: 30px;
 
     @media (min-width: $tablet-width) {
-      top: 33px;
       right: 34px;
-    }
-
-    &:hover {
-      background-color: $blue-hover;
     }
   }
 }
@@ -160,6 +183,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 360px 50px 37px;
+    padding: 26px 360px 40px 37px;
   }
 }

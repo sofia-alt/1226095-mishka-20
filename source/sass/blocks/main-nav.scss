@@ -18,22 +18,23 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 28px;
-  right: 30px;
+  top: 18px;
+  right: 21px;
   border: none;
   background-color: transparent;
-  width: 21px;
-  height: 21px;
+  width: 40px;
+  height: 40px;
   background-image: url("/img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav__toggle-closed {
+.main-nav__toggle_closed {
   background-image: url("/img/icon-menu-close.svg");
-  background-repeat: no-repeat;
 }
 
 .main-nav__logo {
@@ -57,15 +58,17 @@
 }
 
 .main-nav__search {
-  padding: 27px 0 27px 30px;
-  border-bottom: 1px solid $basic-grey;
+  padding: 27px 30px 27px 30px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 36px 31px 34px 33px;
-    border-bottom: none;
     border-right: 1px solid $basic-grey;
     border-left: 1px solid $basic-grey;
     grid-area: search;
+    width: auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,13 +78,23 @@
 
 .main-nav__cart {
   font-weight: bold;
-  padding: 27px 0 27px 30px;
+  padding: 27px 30px 27px 30px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 31px 30px;
+    grid-area: cart;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.main-nav__link-wrapper {
   border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
-    padding: 33px 0 31px 30px;
-    grid-area: cart;
+    border: none;
   }
 }
 

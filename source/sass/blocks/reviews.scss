@@ -23,8 +23,8 @@
     content: "";
     background-image: url("/img/bg-zigzag-line.svg");
     height: 6px;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 320px;
+    background-repeat: repeat-x;
     position: absolute;
     bottom: 0;
     transform: translateX(-50%);
@@ -34,11 +34,13 @@
 
     @media (min-width: $tablet-width) {
       height: 20px;
+      background-size: 772px;
     }
 
     @media (min-width: $desktop-width) {
       height: 23px;
       width: 1052px;
+      background-size: 1050px;
     }
   }
 }
@@ -104,13 +106,13 @@
 
 .reviews__author_contact {
   font-size: 17px;
-  line-height: 30px;
+  line-height: 37px;
   color: $basic-dark;
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 26px;
 }
 
-.reviews__button {
+.reviews__button-write {
   @media (min-width: $tablet-width) {
     order: -1;
     padding: 15px 38px;
@@ -151,13 +153,15 @@
   }
 }
 
-.reviews__button-toggle button {
+.reviews__button {
   background-color: transparent;
   border: none;
   width: 50%;
   height: 50px;
   padding: 0;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 50%;
 
   &:hover {
     opacity: 0.7;
@@ -168,10 +172,8 @@
   }
 }
 
-.reviews__button-back {
+.reviews__button_back {
   background-image: url("/img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
   position: relative;
 
   &::after {
@@ -188,8 +190,6 @@
   }
 }
 
-.reviews__button-forward {
+.reviews__button_forward {
   background-image: url("/img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
 }

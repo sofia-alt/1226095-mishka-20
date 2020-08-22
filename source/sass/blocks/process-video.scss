@@ -13,6 +13,14 @@
     margin-bottom: 102px;
     gap: 0 50px;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .process-video__title {
@@ -117,5 +125,30 @@
   @media (min-width: $desktop-width) {
     width: 683px;
     height: 455px;
+  }
+}
+
+.process-video__link {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    background-image: url("/img/icon-play.svg");
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 37px;
+    left: 80px;
+
+    @media (min-width: $tablet-width) {
+      top: 189px;
+      left: 283px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 190px;
+      left: 292px;
+    }
   }
 }

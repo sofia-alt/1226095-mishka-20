@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 467px auto;
-    padding: 45px 0 98px;
+    padding: 55px 0 98px;
     gap: 0 57px;
   }
 
@@ -21,8 +21,8 @@
     content: "";
     background-image: url("/img/bg-zigzag-line.svg");
     height: 6px;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 320px;
+    background-repeat: repeat-x;
     position: absolute;
     bottom: 0;
     transform: translateX(-50%);
@@ -32,11 +32,13 @@
 
     @media (min-width: $tablet-width) {
       height: 20px;
+      background-size: 772px;
     }
 
     @media (min-width: $desktop-width) {
       height: 23px;
       width: 1052px;
+      background-size: 1050px;
     }
   }
 }
@@ -65,11 +67,11 @@
 
 .product-week__title {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 25px;
   text-transform: uppercase;
   color: $basic-blue;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   grid-column: 1/-1;
@@ -99,7 +101,7 @@
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {

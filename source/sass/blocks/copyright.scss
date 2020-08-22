@@ -3,7 +3,7 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  padding-top: 14px;
+  padding-top: 21px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
   }
 
   &:hover svg {
-    fill: $blue-hover;
+    fill: $blue-state;
   }
 
   &:active svg {

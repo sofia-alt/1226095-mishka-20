@@ -8,20 +8,15 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    padding: 52px 0;
+    padding: 51px 0 35px;
   }
 }
 
 .page-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 102px 1fr 228px;
+    grid-template-columns: 145px 1fr 228px;
     margin: 0 auto;
-    width: 668px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1050px;
   }
 }
 
@@ -30,11 +25,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    text-align: left;
     fill: $basic-black;
   }
 
   &:hover {
-    fill: $blue-hover;
+    fill: $blue-state;
   }
 
   &:active {

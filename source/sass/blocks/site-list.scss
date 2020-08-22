@@ -11,10 +11,15 @@
   line-height: 24px;
   display: block;
   cursor: pointer;
+  padding: 27px 0 27px 76px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 24px;
+    width: auto;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +37,6 @@
 }
 
 .site-list__item {
-  padding: 27px 0 27px 76px;
   border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {

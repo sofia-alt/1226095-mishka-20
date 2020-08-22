@@ -101,6 +101,15 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 4px;
   }
+
+  &:hover {
+    color: $blue-state;
+    border-bottom-color: $blue-state;
+  }
+
+  &:active {
+    border-bottom-color: rgba($blue-state, 0.1);
+  }
 }
 
 .contacts__text {
