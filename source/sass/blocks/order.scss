@@ -8,14 +8,11 @@
     padding-bottom: 50px;
     position: relative;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 175px;
-  }
 }
 
 .order__text {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-bottom: 40px;
   font-size: 13px;
   line-height: 24px;
@@ -23,13 +20,14 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
-    padding-bottom: 80px;
+    padding-bottom: 0;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 705px;
+    width: 700px;
+    padding-top: 55px;
   }
 }
 
@@ -63,6 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: 780px;
+    padding-left: 80px;
   }
 }

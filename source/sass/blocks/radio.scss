@@ -1,4 +1,17 @@
 .radio {
-  display: inline-block;
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.radio:last-child {
+  padding-bottom: 0;
+}
+
+.radio__input {
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  margin-right: 28px;
 }

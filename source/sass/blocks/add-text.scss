@@ -9,15 +9,19 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     display: block;
-    margin-left: auto;
-    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    margin-left: 0;
-    margin-bottom: 50px;
+  }
+
+  &:hover {
+    border-color: $basic-blue-light;
+  }
+
+  &:active {
+    border-color: $basic-blue-light;
+    color: $basic-dark;
   }
 }

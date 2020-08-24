@@ -9,19 +9,19 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    margin-left: auto;
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 700px;
-    margin-left: 0;
+    padding-top: 63px;
   }
 }
 
 .form__list {
-  margin-bottom: 24px;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 24px 0;
+}
+
+.form__fieldset:nth-child(2n) {
+  background-color: $basic-grey;
+  padding-top: 48px;
 }
 
 .form__heading {
@@ -31,10 +31,11 @@
   color: $basic-blue;
   margin-bottom: 24px;
   margin-top: 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 0;
+    margin-right: 0;
+    margin-top: 20px;
   }
 }
 
@@ -46,7 +47,6 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
-    margin-right: 25px;
   }
 }
 
@@ -67,12 +67,22 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
+
+  &:hover {
+    border-bottom-color: $basic-blue-light;
+  }
+
+  &:active {
+    border-bottom-color: $basic-blue-light;
+    color: $basic-dark;
+  }
 }
 
 .form__list_checkbox {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 210px 210px;
+    gap: 25px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,10 +96,11 @@
 }
 
 .form__item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 }
 
@@ -97,6 +108,36 @@
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.form__icon {
+  opacity: 0.2;
+  fill: $basic-dark;
+  position: absolute;
+  right: 17px;
+  top: 11px;
+}
+
+.form__inner {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    grid-template-columns: 60px 700px;
+    column-gap: 55px;
+    width: 930px;
+  }
+}
+
+.form__list_contacts {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
   }
 }
