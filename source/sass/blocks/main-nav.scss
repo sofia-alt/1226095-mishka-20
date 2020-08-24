@@ -74,11 +74,20 @@
   @media (min-width: $desktop-width) {
     padding: 35px 32px 34px 30px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 .main-nav__cart {
   font-weight: bold;
-  padding: 27px 30px 27px 30px;
+  padding: 29px 30px 27px 30px;
   width: 320px;
   margin: 0 auto;
 
@@ -88,10 +97,20 @@
     width: auto;
     margin: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 .main-nav__link-wrapper {
   border-bottom: 1px solid $basic-grey;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: none;

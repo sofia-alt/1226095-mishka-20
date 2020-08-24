@@ -5,8 +5,14 @@
 }
 
 .checkbox__input {
-  width: 52px;
-  height: 52px;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 24px;
+  min-width: 38px;
+  min-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    margin-right: 30px;
+  }
 }

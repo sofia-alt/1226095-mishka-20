@@ -1,8 +1,8 @@
 .radio {
   display: flex;
   align-items: center;
-  padding-bottom: 25px;
   position: relative;
+  padding-top: 2px;
 }
 
 .radio:last-child {
@@ -10,8 +10,15 @@
 }
 
 .radio__input {
-  width: 52px;
-  height: 52px;
   margin: 0;
-  margin-right: 28px;
+  margin-right: 18px;
+  min-width: 42px;
+  min-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    margin-right: 28px;
+  }
 }
+

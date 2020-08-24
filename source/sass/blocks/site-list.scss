@@ -10,7 +10,7 @@
   font-size: 17px;
   line-height: 24px;
   display: block;
-  padding: 27px 0 30px 76px;
+  padding: 27px 30px 27px 76px;
   width: 320px;
   margin: 0 auto;
 
@@ -33,10 +33,20 @@
   &:active {
     opacity: 0.3;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 .site-list__item {
   border-bottom: 1px solid $basic-grey;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 21px 35px 0 0;
