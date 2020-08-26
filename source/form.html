@@ -92,27 +92,25 @@
       <p class="order__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset">
-          <div class="container form__inner">
-            <legend class="form__heading">Тип</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label radio">
-                  <input class="radio__input" type="radio" name="type" value="Interior accessory" checked>
-                  <span class="radio__text">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label radio">
-                  <input class="radio__input" type="radio" name="type" value="Childs toy">
-                  <span class="radio__text">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+        <fieldset class="form__fieldset container">
+          <legend class="form__heading">Тип</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label radio">
+                <input class="radio__input" type="radio" name="type" value="Interior accessory" checked>
+                <span class="radio__text">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label radio">
+                <input class="radio__input" type="radio" name="type" value="Childs toy">
+                <span class="radio__text">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="container form__inner">
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset container">
             <legend class="form__heading">Цвет</legend>
             <ul class="form__list form__list_checkbox">
               <li class="form__item form__item_checkbox">
@@ -152,36 +150,34 @@
                 </label>
               </li>
             </ul>
-          </div>
+          </fieldset>
+        </div>
+        <fieldset class="form__fieldset container">
+          <legend class="form__heading">ФИО</legend>
+          <ul class="form__list form__list_info">
+            <li class="form__item">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input" type="text" name="your-name" id="name" placeholder="Введите ваше имя*"
+                required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__input" type="text" name="your-surname" id="surname" placeholder="Укажите фамилию*"
+                required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="form__input" type="text" name="your-patronymic" id="patronymic"
+                placeholder="Отчество, если желаете">
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="container form__inner">
-            <legend class="form__heading">ФИО</legend>
-            <ul class="form__list form__list_info">
-              <li class="form__item">
-                <label class="form__label" for="name">Имя:</label>
-                <input class="form__input" type="text" name="your-name" id="name" placeholder="Введите ваше имя*"
-                  required>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="surname">Фамилия:</label>
-                <input class="form__input" type="text" name="your-surname" id="surname" placeholder="Укажите фамилию*"
-                  required>
-              </li>
-              <li class="form__item">
-                <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__input" type="text" name="your-patronymic" id="patronymic"
-                  placeholder="Отчество, если желаете">
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="container form__inner">
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset container">
             <legend class="visually-hidden">Ваши контактные данные</legend>
             <ul class="form__list form__list_contacts">
               <li class="form__item form__item_contacts">
-                <label class="form__heading" for="telephone">Тел</label>
+                <label class="form__heading form__heading_contacts" for="telephone">Тел</label>
                 <svg class="form__icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px"
                   viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
@@ -204,7 +200,7 @@
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </li>
               <li class="form__item form__item_contacts">
-                <label class="form__heading" for="email">E-mail</label>
+                <label class="form__heading form__heading_contacts form__heading_email" for="email">E-mail</label>
                 <svg class="form__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
                   viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
@@ -215,9 +211,9 @@
                   placeholder="Ваш Email*" required>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <label class="add-text form__inner container">
+          </fieldset>
+        </div>
+        <label class="add-text container">
           <h2 class="form__heading add-text__title">ДОП</h2>
           <textarea class="add-text__textarea" name="additionally" placeholder="Опишите все ваши пожелания к заказу"
             rows="6"></textarea>

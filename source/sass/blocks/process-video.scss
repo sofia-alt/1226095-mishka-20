@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 682px 260px;
-    margin-bottom: 102px;
+    margin-bottom: 104px;
     gap: 0 50px;
   }
 
@@ -149,6 +149,19 @@
     @media (min-width: $desktop-width) {
       top: 190px;
       left: 292px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+      transform: scale(0.8);
     }
   }
 }

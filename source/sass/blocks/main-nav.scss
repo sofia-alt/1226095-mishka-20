@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 375px 1fr 83px 265px;
+    grid-template-columns: 375px 1fr 85px 266px;
     grid-template-areas:
       "menu logo search cart"
       "info-menu info-menu info-menu info-menu";
@@ -72,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 35px 32px 34px 30px;
+    padding: 35px 32px 35px 30px;
   }
 
   &::before {
@@ -87,7 +87,7 @@
 
 .main-nav__cart {
   font-weight: bold;
-  padding: 29px 30px 27px 30px;
+  padding: 28px 30px 27px 30px;
   width: 320px;
   margin: 0 auto;
 

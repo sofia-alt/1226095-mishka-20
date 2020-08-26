@@ -95,8 +95,7 @@
 
   &:hover {
     .promo__text {
-      left: 0;
-      bottom: 5px;
+      transform: translateY(-5px);
       background-color: $blue-light-state;
     }
 

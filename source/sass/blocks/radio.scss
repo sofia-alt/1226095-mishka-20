@@ -18,6 +18,10 @@
   @media (min-width: $tablet-width) {
     width: 52px;
     height: 52px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-right: 28px;
   }
 }

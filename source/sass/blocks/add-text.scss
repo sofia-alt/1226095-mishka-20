@@ -1,13 +1,16 @@
 .add-text {
   display: block;
   padding-top: 5px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding-top: 48px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 52px;
+    padding: 50px 0;
   }
 }
 
@@ -19,20 +22,29 @@
   resize: none;
   font-family: inherit;
   width: 100%;
-  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: block;
     font-size: 19px;
-    margin-bottom: 0;
+    margin-left: auto;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin: 0 auto;
   }
 
   &:hover {
     border-color: $basic-blue-light;
   }
 
-  &:active {
+  &:focus {
     border-color: $basic-blue-light;
     color: $basic-dark;
   }
+}
+
+.add-text__title {
+  margin-bottom: 25px;
 }
