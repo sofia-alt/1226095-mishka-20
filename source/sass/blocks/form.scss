@@ -23,11 +23,9 @@
   }
 }
 
-.form__fieldset:nth-child(3) {
-  padding-top: 5px;
-
+.form__fieldset:nth-child(2) {
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-bottom: 52px;
   }
 }
 
@@ -223,7 +221,7 @@
 }
 
 .form__list_info {
-  gap: 19px 0;
+  gap: 22px 0;
 
   @media (min-width: $tablet-width) {
     gap: 24px 0;

@@ -1,16 +1,17 @@
 .add-text {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 12px;
+  padding-top: 1px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 48px;
-    padding-bottom: 55px;
+    padding-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 50px 0;
+    height: 140px;
   }
 }
 
@@ -28,6 +29,7 @@
     font-size: 19px;
     margin-left: auto;
     width: 500px;
+    rows: 6;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,5 +48,9 @@
 }
 
 .add-text__title {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }

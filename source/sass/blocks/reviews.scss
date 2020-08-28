@@ -23,7 +23,7 @@
     content: "";
     background-image: url("/img/bg-zigzag-line.svg");
     height: 6px;
-    background-size: 320px;
+    background-size: 330px;
     background-repeat: repeat-x;
     position: absolute;
     bottom: 0;
@@ -74,14 +74,14 @@
 
 .reviews__text {
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 32px;
   color: $basic-dark;
   font-size: 15px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
