@@ -37,15 +37,15 @@
 }
 
 .promo__inner {
-  padding: 72px 10px 119px 10px;
+  padding: 72px 0 119px;
 
   @media (min-width: $tablet-width) {
-    padding: 111px 80px 371px;
+    padding: 111px 0 371px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 300px 355px;
+    padding: 115px 0 355px;
   }
 }
 
