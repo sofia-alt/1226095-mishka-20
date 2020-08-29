@@ -182,17 +182,20 @@
 .product-week__photo img {
   display: block;
   margin-bottom: 25px;
+  width: 260px;
+  height: 315px;
 
   @media (min-width: $tablet-width) {
     width: 333px;
     height: 404px;
     margin-bottom: 0;
-    margin-top: 14px;
+    margin-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
+    margin-top: 11px;
   }
 }
 

@@ -49,11 +49,36 @@
     grid-area: logo;
     text-align: left;
     padding: 0;
+    padding-top: 7px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    margin-left: 75px;
+  }
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo img {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 
