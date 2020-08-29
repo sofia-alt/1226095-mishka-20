@@ -1,23 +1,55 @@
+.add-text {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 0;
+  }
+}
+
 .add-text__textarea {
   border: 2px solid $basic-black;
-  padding: 17px;
+  padding: 15px;
   font-size: 17px;
   line-height: 18px;
   resize: none;
   font-family: inherit;
   width: 100%;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     display: block;
+    font-size: 19px;
     margin-left: auto;
-    margin-bottom: 55px;
+    width: 500px;
+    height: 140px;
   }
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    margin-left: 0;
-    margin-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    border-color: $basic-blue-light;
+  }
+
+  &:focus {
+    border-color: $basic-blue-light;
+    color: $basic-dark;
+  }
+}
+
+.add-text__title {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
   }
 }

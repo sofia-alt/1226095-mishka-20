@@ -1,12 +1,39 @@
 .page-footer {
   background-color: $basic-dark-grey;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 22px;
   text-align: center;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    padding: 50px 0 32px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 145px 1fr 228px;
+    margin: 0 auto;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: left;
+    fill: $basic-black;
+  }
+
+  &:hover {
+    fill: $blue-state;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

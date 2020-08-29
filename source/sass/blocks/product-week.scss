@@ -1,9 +1,10 @@
 .product-week {
   background-color: $basic-white;
-  padding: 30px 0;
+  padding: 31px 0 41px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 50px;
+    padding: 40px 0 74px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content 1fr min-content;
@@ -11,9 +12,34 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 470px auto;
-    padding: 69px 0 50px;
-    gap: 0 58px;
+    grid-template-columns: 467px auto;
+    padding: 54px 0 98px;
+    gap: 0 57px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("/img/bg-zigzag-line.svg");
+    height: 6px;
+    background-size: 330px;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      height: 20px;
+      background-size: 772px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      width: 1052px;
+      background-size: 1050px;
+    }
   }
 }
 
@@ -34,37 +60,39 @@
     order: 0;
     font-size: 53px;
     line-height: 57px;
-    margin-left: 50px;
+    margin-left: 56px;
+    margin-top: 6px;
   }
 }
 
 .product-week__title {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 25px;
   text-transform: uppercase;
   color: $basic-blue;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   grid-column: 1/-1;
   grid-row: 1;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
     line-height: 17px;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     text-align: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    padding-right: 26px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: left;
     z-index: 1;
-    margin-left: 55px;
+    margin-left: 47px;
+    padding-top: 66px;
   }
 }
 
@@ -72,7 +100,7 @@
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark;
-  margin-bottom: 28px;
+  margin-bottom: 21px;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
@@ -83,8 +111,8 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
-    margin-bottom: 50px;
-    width: 295px;
+    margin-bottom: 53px;
+    width: 292px;
   }
 }
 
@@ -92,8 +120,9 @@
   font-size: 15px;
   line-height: 20px;
   color: $basic-dark;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   width: 260px;
+  align-self: baseline;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 43px;
@@ -101,6 +130,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 295px;
     margin-left: auto;
   }
 }
@@ -110,8 +140,14 @@
   box-shadow: inset 0 -1px 0 0 $basic-grey;
 
   td {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    min-width: 90px;
+    display: inline-block;
+
+    @media (min-width: $desktop-width) {
+      min-width: 94px;
+    }
   }
 }
 
@@ -123,10 +159,15 @@
   margin: 0 auto 25px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0 auto 33px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    margin-right: 73px;
     margin-left: auto;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 }
 
@@ -140,17 +181,21 @@
 
 .product-week__photo img {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  width: 260px;
+  height: 315px;
 
   @media (min-width: $tablet-width) {
     width: 333px;
     height: 404px;
     margin-bottom: 0;
+    margin-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
     width: 525px;
     height: 636px;
+    margin-top: 11px;
   }
 }
 
@@ -169,5 +214,6 @@
   @media (min-width: $desktop-width) {
     margin-left: auto;
     width: 292px;
+    padding: 15px;
   }
 }

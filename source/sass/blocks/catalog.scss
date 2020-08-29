@@ -2,7 +2,11 @@
   padding: 30px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 0 53px;
+    padding: 70px 0 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 0 56px;
   }
 }
 
@@ -11,10 +15,10 @@
   margin: 0;
   padding: 0;
   display: grid;
-  row-gap: 30px;
+  row-gap: 29px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 50px;
+    row-gap: 52px;
   }
 
   @media (min-width: $desktop-width) {

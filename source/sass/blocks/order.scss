@@ -1,35 +1,36 @@
 .order {
   background-color: $basic-white;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 57px;
     padding-bottom: 50px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    padding-top: 55px;
   }
 }
 
 .order__text {
-  margin: 0;
-  padding-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 29px;
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 705px;
+    width: 700px;
+    padding-top: 55px;
   }
 }
 
@@ -42,6 +43,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 

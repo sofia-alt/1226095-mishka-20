@@ -3,6 +3,23 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  padding-top: 21px;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: start;
+  }
+
+  &:hover svg {
+    fill: $blue-state;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -10,4 +27,8 @@
   font-size: 19px;
   line-height: 18px;
   margin: 0 30px 0 0;
+}
+
+.copyright__icon {
+  fill: $basic-black;
 }

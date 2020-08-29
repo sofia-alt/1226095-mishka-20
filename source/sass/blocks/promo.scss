@@ -1,28 +1,51 @@
 .promo {
   background-image: url("/img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% -17%;
   background-color: $basic-grey-light;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: url("/img/hero-tablet@1x.jpg");
+    background-position: 50% 140%;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("/img/hero-desktop@1x.jpg");
+    background-position-x: 50%;
+    background-position-y: 115%;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      background-image: url("/img/bg-zigzag-fill.svg");
+      height: 22px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-repeat: repeat-x;
+      background-size: 100%;
+      position: absolute;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: auto 37px;
+      background-position-x: 50%;
+    }
   }
 }
 
 .promo__inner {
-  padding: 75px 10px 120px 10px;
+  padding: 72px 10px 119px 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 155px 80px 375px;
+    padding: 111px 80px 371px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 160px 300px 355px;
+    padding: 115px 300px 355px;
   }
 }
 
@@ -69,10 +92,72 @@
   color: $basic-white;
   display: block;
   background-color: $basic-blue;
+
+  &:hover {
+    .promo__text {
+      transform: translateY(-5px);
+      background-color: $blue-light-state;
+    }
+
+    .promo__text_toy {
+      background: $blue-state;
+    }
+
+    .promo__text::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    .promo__text::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.promo__text::after {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 61px;
+  top: 22px;
+  right: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
+}
+
+.promo__text_interior {
+  position: relative;
+
+  &::after {
+    background-image: url("/img/icon-interior.svg");
+  }
 }
 
 .promo__link_toy {
   background-color: $basic-blue-dark;
+
+  &:hover {
+    background-color: $blue-state;
+  }
+}
+
+
+.promo__text_toy {
+  position: relative;
+
+  &::after {
+    background-image: url("/img/icon-toy.svg");
+    right: 30px;
+
+    @media (min-width: $tablet-width) {
+      right: 34px;
+    }
+  }
 }
 
 .promo__item {
@@ -85,18 +170,18 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  padding: 32px 180px 32px 30px;
+  padding: 23px 180px 32px 30px;
   width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 32px 180px 32px 30px;
+    padding: 27px 180px 45px 36px;
     width: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 34px 360px 34px 37px;
+    padding: 26px 360px 38px 37px;
   }
 }

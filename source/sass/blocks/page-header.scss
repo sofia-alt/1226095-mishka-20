@@ -1,3 +1,15 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $basic-white 0 87px, $basic-grey 87px 88px, $basic-dark-grey 88px);
+  }
+}
+
+.page-header_main {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $basic-white 0 87px, $basic-grey 87px 88px, $basic-grey-light 88px);
+  }
+}
+
 .page-header__container {
   margin: 0 auto;
 

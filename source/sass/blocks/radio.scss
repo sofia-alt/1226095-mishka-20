@@ -1,4 +1,28 @@
 .radio {
-  display: inline-block;
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 2px;
 }
+
+.radio:last-child {
+  padding-bottom: 0;
+}
+
+.radio__input {
+  margin: 0;
+  margin-right: 18px;
+  min-width: 42px;
+  min-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 28px;
+  }
+}
+

@@ -9,7 +9,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-top: 1px solid $basic-grey;
     justify-content: space-between;
     width: 100%;
     align-items: baseline;
@@ -18,7 +17,7 @@
 
 .info-menu__item {
   @media (min-width: $desktop-width) {
-    margin-right: 60px;
+    margin-right: 62px;
   }
 }
 
@@ -49,4 +48,12 @@
   font-size: 15px;
   line-height: 24px;
   color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

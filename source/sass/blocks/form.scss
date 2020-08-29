@@ -7,21 +7,41 @@
 .form__fieldset {
   border: none;
   padding: 0;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    margin-left: auto;
-    margin-bottom: 50px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 51px;
+    padding-left: 170px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 700px;
-    margin-left: 0;
+    padding-left: 175px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+.form__fieldset:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
   }
 }
 
 .form__list {
-  margin-bottom: 24px;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 24px 0;
+    grid-template-columns: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 700px;
+  }
 }
 
 .form__heading {
@@ -29,12 +49,53 @@
   font-size: 17px;
   line-height: 16px;
   color: $basic-blue;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   margin-top: 0;
+  text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin-bottom: 0;
+    top: 66px;
     left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: $basic-blue-light;
+    top: 9px;
+    left: 59px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.form__heading_contacts {
+  @media (min-width: $tablet-width) {
+    left: -169px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -113px;
+    top: 14px;
+  }
+}
+
+.form__heading_email {
+  &::after {
+    left: 78px;
+    width: 182px;
   }
 }
 
@@ -45,7 +106,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    line-height: 18px;
     margin-right: 25px;
   }
 }
@@ -56,36 +116,53 @@
   border-top: none;
   border-right: none;
   border-left: none;
-  height: 52px;
+  height: 50px;
   font-size: 17px;
   line-height: 18px;
   font-family: inherit;
   width: 260px;
-  margin-bottom: 22px;
-  padding: 18px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    padding: 18px;
     flex-grow: 1;
+    margin-bottom: 0;
+    font-size: 19px;
+    height: 52px;
+  }
+
+  &:hover {
+    border-bottom-color: $basic-blue-light;
+  }
+
+  &:focus {
+    border-bottom-color: $basic-blue-light;
+    color: $basic-dark;
+
+    .form__icon {
+      fill: $basic-blue-light;
+      opacity: 1;
+    }
   }
 }
 
 .form__list_checkbox {
+  gap: 23px;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 210px 210px;
+    grid-template-columns: 240px 240px;
+    gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 740px;
-    grid-template-columns: 210px 210px 210px;
+    grid-template-columns: 240px 240px 240px;
   }
 }
 
-.form__list_checkbox li {
-  width: 210px;
-}
-
 .form__item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -93,10 +170,60 @@
   }
 }
 
-.form__item_checkbox {
-  margin-bottom: 45px;
+.form__icon {
+  opacity: 0.2;
+  fill: $basic-dark;
+  position: absolute;
+  top: 34px;
+  right: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    top: 11px;
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.form__list_contacts {
+  gap: 34px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    gap: 24px 0;
+  }
+}
+
+.form__item_contacts {
+  &:hover {
+    .form__icon {
+      fill: $basic-blue-light;
+      opacity: 1;
+    }
+  }
+}
+
+.form__input_contacts {
+  padding: 26px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 18px 20px;
+  }
+}
+
+.form__list_info {
+  gap: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 24px 0;
   }
 }

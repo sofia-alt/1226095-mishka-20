@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 375px 1fr 83px 265px;
+    grid-template-columns: 375px 1fr 85px 266px;
     grid-template-areas:
       "menu logo search cart"
       "info-menu info-menu info-menu info-menu";
@@ -18,12 +18,23 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 18px;
+  right: 21px;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle_closed {
+  background-image: url("/img/icon-menu-close.svg");
 }
 
 .main-nav__logo {
@@ -31,47 +42,103 @@
   position: relative;
   text-align: center;
   align-self: center;
-  padding: 22px;
+  padding: 20px;
   border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
     grid-area: logo;
     text-align: left;
     padding: 0;
+    padding-top: 7px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    margin-left: 75px;
+  }
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo img {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 
 .main-nav__search {
-  padding: 30px;
-  border-bottom: 1px solid $basic-grey;
+  padding: 27px 30px 27px 30px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 36px 31px 34px 33px;
-    border-bottom: none;
     border-right: 1px solid $basic-grey;
     border-left: 1px solid $basic-grey;
     grid-area: search;
+    width: auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 33px 35px 32px;
+    padding: 35px 32px 35px 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 }
 
 .main-nav__cart {
   font-weight: bold;
-  padding: 30px;
-  border-bottom: 1px solid $basic-grey;
+  padding: 28px 30px 27px 30px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
-    padding: 33px 0 33px 30px;
+    padding: 33px 0 31px 30px;
     grid-area: cart;
+    width: auto;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.main-nav__link-wrapper {
+  border-bottom: 1px solid $basic-grey;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 

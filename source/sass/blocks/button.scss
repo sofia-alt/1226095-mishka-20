@@ -8,6 +8,17 @@
   text-transform: uppercase;
   font-family: inherit;
   display: block;
-  padding: 18px;
+  padding: 17px;
   background-color: $basic-white;
+
+  &:hover {
+    background-color: $basic-dark;
+    color: $basic-white;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $basic-dark;
+    color: rgba($basic-white, 0.3);
+  }
 }
