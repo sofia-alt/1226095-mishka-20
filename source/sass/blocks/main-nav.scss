@@ -31,6 +31,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .main-nav__toggle_closed {
@@ -117,7 +121,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 33px 0 31px 30px;
+    padding: 33px 0 5px 29px;
     grid-area: cart;
     width: auto;
     margin: 0;
@@ -152,4 +156,20 @@
 
 .main-nav__menu {
   grid-area: info-menu;
+}
+
+.main-nav__invisible {
+  display: none;
+}
+
+.main-nav__invisible_link {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__invisible_list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

@@ -20,7 +20,7 @@ const styles = () => {
   .pipe(csso())
   .pipe(rename("styles.min.css"))
   .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("source/css"))
  }
 
 exports.styles = styles;
@@ -121,10 +121,10 @@ exports.webp = createWebp;
 
 const build = gulp.series(
   clean,
+  styles,
   images,
   sprite,
   createWebp,
-  copy,
-  styles
+  copy
  );
  exports.build = build
