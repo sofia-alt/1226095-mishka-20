@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="preload">
 </head>
 
 <body class="page__body">
@@ -201,7 +202,7 @@
           </li>
         </ul>
       </div>
-      <a class="copyright" href="#">
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">Разработано</p>
         <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg"  width="27" height="35" viewBox="0 0 26.943 34.09">
           <use xlink:href="/img/sprite.svg#logo-htmlacademy"></use>
@@ -209,6 +210,35 @@
       </a>
     </div>
   </footer>
+    <div class="modal-cart modal-cart__invisible">
+    <div class="modal-cart__content">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <p class="modal-cart__text">Выберите размер:</p>
+      <form class="modal-cart__form">
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <label class="modal-cart__label">
+              <input class="modal-cart__checkbox" type="checkbox" name="small" checked>
+              <span class="modal-cart__size">S</span>
+            </label>
+          </li>
+          <li class="modal-cart__item">
+            <label class="modal-cart__label">
+              <input class="modal-cart__checkbox" type="checkbox" name="medium">
+              <span class="modal-cart__size">M</span>
+            </label>
+          </li>
+          <li class="modal-cart__item">
+            <label class="modal-cart__label">
+              <input class="modal-cart__checkbox" type="checkbox" name="large">
+              <span class="modal-cart__size">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="button modal-cart__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>

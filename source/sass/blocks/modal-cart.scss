@@ -1,5 +1,15 @@
 .modal-cart {
   position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  padding: 30px;
+  background-color: rgba($basic-white, 0.9);
+}
+
+.modal-cart__content {
   width: 320px;
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +23,7 @@
   margin-left: -160px;
   margin-top: -169px;
   text-align: center;
+  position: fixed;
 
   @media (min-width: $tablet-width) {
     width: 566px;
