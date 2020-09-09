@@ -11,12 +11,13 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   left: 50%;
   margin-left: -160px;
-  margin-top: -166px;
+  margin-top: -169px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 566px;
     margin-left: -283px;
+    margin-top: -85px;
     padding: 40px 101px 46px;
   }
 }
@@ -27,11 +28,12 @@
   text-transform: uppercase;
   width: 160px;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     width: 380px;
     line-height: 57px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 }
@@ -46,6 +48,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
   }
 }
 
@@ -66,11 +72,11 @@
   position: relative;
   text-align: center;
   align-self: center;
-  padding: 18px 0;
+  padding: 16px 0;
   border: 2px solid rgba($basic-dark, 0.1);
 
   @media (min-width: $tablet-width) {
-    width: 112px;
+    width: 110px;
   }
 
   &:hover {
@@ -107,18 +113,15 @@
     position: absolute;
     top: -2px;
     left: -2px;
-    width: 82px;
-    height: 56px;
+    width: 83px;
+    height: 106%;
     border: 2px solid $blue-icon;
 
     @media (min-width: $tablet-width) {
-      width: 112px;
+      width: 110px;
+      height: 107%;
     }
   }
-}
-
-.modal-cart__item {
-  margin-right: 7px;
 }
 
 .modal-cart__invisible {
