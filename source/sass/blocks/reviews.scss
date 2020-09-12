@@ -43,6 +43,13 @@
       width: 768px;
       margin-left: -384px;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      width: 1052px;
+      background-size: 1050px;
+      margin-left: -525px;
+    }
   }
 }
 

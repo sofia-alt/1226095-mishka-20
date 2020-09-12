@@ -22,13 +22,12 @@
         content: "";
         background-image: url("/img/bg-zigzag-fill.svg");
         height: 22px;
-        width: 768px;
-        left: 50%;
-        margin-left: -384px;
+        width: 100%;
         bottom: 0;
+        left: 0;
+        background-repeat: repeat-x;
         background-size: 100%;
         position: absolute;
-        background-repeat: no-repeat;
       }
     }
   }
@@ -41,8 +40,6 @@
     &::after {
       background-size: auto 35px;
       background-position-x: 50%;
-      width: 1150px;
-      margin-left: -575px;
     }
   }
 }
