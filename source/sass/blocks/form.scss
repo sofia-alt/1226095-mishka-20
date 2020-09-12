@@ -187,27 +187,11 @@
 }
 
 .form__list_contacts {
-  gap: 34px 0;
+  gap: 33px 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     gap: 24px 0;
-  }
-}
-
-.form__item_contacts {
-  &:hover {
-    .form__icon {
-      fill: $basic-blue-light;
-      opacity: 1;
-    }
-  }
-
-  &:focus {
-    .form__icon {
-      fill: $basic-blue-light;
-      opacity: 1;
-    }
   }
 }
 
@@ -217,6 +201,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 18px 18px 20px;
+  }
+
+  &:focus + svg {
+    fill: $basic-blue-light;
+    opacity: 1;
+  }
+
+  &:hover + svg {
+    fill: $basic-blue-light;
+    opacity: 1;
   }
 }
 

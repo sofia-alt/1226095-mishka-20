@@ -67,14 +67,11 @@ exports.clean = clean;
 
 // Copy
 
-const copy = () => {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/*.ico"
-  ])
-    .pipe(gulp.dest("build"));
+const copyFonts = () => {
+  return gulp.src("source/fonts/**/*.{woff,woff2}")
+    .pipe(gulp.dest("build/fonts"));
 };
-exports.copy = copy;
+exports.copyFonts = copyFonts;
 
 const copyHtml = () => {
   return gulp.src([
@@ -137,7 +134,7 @@ const build = gulp.series(
   images,
   sprite,
   createWebp,
-  copy,
+  copyFonts,
   copyHtml,
   js
 );
