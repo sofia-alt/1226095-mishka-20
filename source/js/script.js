@@ -38,7 +38,8 @@ addEventListener("keydown", function (e) {
 });
 
 if (productWeekBtn) {
-  productWeekBtn.addEventListener('click', function () {
+  productWeekBtn.addEventListener('click', function (e) {
+    e.preventDefault();
     addModal();
   });
 }
