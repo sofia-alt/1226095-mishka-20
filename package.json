@@ -25,7 +25,7 @@
     "start": "gulp",
     "build": "gulp build",
     "styles": "gulp styles",
-    "scripts": "gulp scripts",
+    "scripts": "gulp js",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint"

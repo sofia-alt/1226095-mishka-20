@@ -7,32 +7,32 @@ const productWeekBtn = document.querySelector('.product-week__button');
 const cartBtn = document.querySelectorAll('.product__button-cart');
 
 document.addEventListener("DOMContentLoaded", function () {
-  navToggle.classList.remove('main-nav__invisible');
-  navList.classList.add('main-nav__invisible', 'main-nav__invisible_list');
-  navLink.forEach(elem => elem.classList.add('main-nav__invisible', 'main-nav__invisible_link'));
+  navToggle.classList.remove('main-nav__toggle_invisible');
+  navList.classList.add('main-nav__list_invisible');
+  navLink.forEach(elem => elem.classList.add('main-nav__link_invisible'));
 });
 
 navToggle.addEventListener('click', function () {
   if (navToggle.classList.contains('main-nav__toggle_closed')) {
     navToggle.classList.remove('main-nav__toggle_closed');
-    navList.classList.add('main-nav__invisible');
-    navLink.forEach(elem => elem.classList.add('main-nav__invisible'));
+    navList.classList.add('main-nav__list_invisible');
+    navLink.forEach(elem => elem.classList.add('main-nav__link_invisible'));
   } else {
     navToggle.classList.add('main-nav__toggle_closed');
-    navList.classList.remove('main-nav__invisible');
-    navLink.forEach(elem => elem.classList.remove('main-nav__invisible'));
+    navList.classList.remove('main-nav__list_invisible');
+    navLink.forEach(elem => elem.classList.remove('main-nav__link_invisible'));
   }
 });
 
-function addModal(params) {
-  modalCart.classList.remove('modal-cart__invisible');
+function addModal() {
+  modalCart.classList.remove('modal-cart_invisible');
 }
 
 addEventListener("keydown", function (e) {
   if (e.keyCode === 27) {
     e.preventDefault();
-    if (!modalCart.classList.contains("modal-cart__invisible")) {
-      modalCart.classList.add("modal-cart__invisible");
+    if (!modalCart.classList.contains("modal-cart_invisible")) {
+      modalCart.classList.add("modal-cart_invisible");
     }
   }
 });

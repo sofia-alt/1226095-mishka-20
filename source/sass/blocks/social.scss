@@ -28,8 +28,8 @@
   height: 40px;
   color: $basic-black;
 
-  &:hover {
-    color: $blue-state;
+  &:hover svg {
+    fill: $blue-state;
   }
 
   &:active svg {

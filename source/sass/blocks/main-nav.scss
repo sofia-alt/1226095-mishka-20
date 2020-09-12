@@ -159,18 +159,22 @@
   grid-area: info-menu;
 }
 
-.main-nav__invisible {
+.main-nav__link_invisible {
   display: none;
-}
 
-.main-nav__invisible_link {
   @media (min-width: $tablet-width) {
     display: block;
   }
 }
 
-.main-nav__invisible_list {
+.main-nav__list_invisible {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.main-nav__toggle_invisible {
+  display: none;
 }
