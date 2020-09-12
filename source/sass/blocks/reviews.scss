@@ -29,23 +29,19 @@
     background-image: url("/img/bg-zigzag-line.svg");
     height: 6px;
     background-size: 330px;
-    background-repeat: repeat-x;
     position: absolute;
     bottom: 0;
-    transform: translateX(-50%);
+    background-repeat: no-repeat;
     left: 50%;
     right: 0;
-    width: 100vw;
+    width: 320px;
+    margin-left: -160px;
 
     @media (min-width: $tablet-width) {
       height: 20px;
       background-size: 772px;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 23px;
-      width: 1052px;
-      background-size: 1050px;
+      width: 768px;
+      margin-left: -384px;
     }
   }
 }

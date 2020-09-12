@@ -2,6 +2,7 @@
   background-color: $basic-white;
   border: 1px solid $basic-grey;
   margin-bottom: 58px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
@@ -15,11 +16,55 @@
   }
 
   &:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 100%;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        width: 668px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        width: 367px;
+      }
+    }
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 100%;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        width: 668px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        width: 367px;
+      }
+    }
   }
 }
 
