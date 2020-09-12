@@ -214,6 +214,8 @@
 }
 
 .product-week__button {
+  padding: 14px;
+
   @media (min-width: $desktop-width) {
     margin-left: auto;
     width: 292px;

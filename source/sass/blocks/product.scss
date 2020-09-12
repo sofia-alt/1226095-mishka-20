@@ -25,12 +25,13 @@
   line-height: 24px;
   color: $basic-black;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     max-width: 240px;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
