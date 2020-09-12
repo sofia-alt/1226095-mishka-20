@@ -73,7 +73,7 @@ const copy = () => {
     "source/*.ico"
   ])
     .pipe(gulp.dest("build"));
-}; 
+};
 exports.copy = copy;
 
 const copyHtml = () => {

@@ -46,4 +46,3 @@ if (productWeekBtn) {
 cartBtn.forEach(elem => elem.addEventListener('click', function () {
   addModal();
 }))
-
