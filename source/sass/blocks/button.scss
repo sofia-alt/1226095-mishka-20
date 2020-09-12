@@ -2,14 +2,18 @@
   border: 2px solid $basic-dark;
   color: $basic-dark;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   font-family: inherit;
   display: block;
-  padding: 17px;
+  padding: 15px 0 14px;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 
   &:hover {
     background-color: $basic-dark;
