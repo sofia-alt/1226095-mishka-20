@@ -32,6 +32,9 @@
 
 .checkbox__text {
   padding-left: 24px;
+  display: block;
+  max-width: 188px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;

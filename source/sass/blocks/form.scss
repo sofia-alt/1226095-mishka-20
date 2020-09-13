@@ -169,6 +169,10 @@
   }
 }
 
+.form__item_checkbox {
+  align-items: baseline;
+}
+
 .form__icon {
   opacity: 0.2;
   fill: $basic-dark;
